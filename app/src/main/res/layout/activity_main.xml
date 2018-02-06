@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bingo.sqlitecontacts.MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Contacts in SQLite Database"
+        android:textColor="#af208e"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/header"
+        android:layout_alignLeft="@id/header"
+        android:layout_alignRight="@id/header"
+        android:layout_alignStart="@id/header"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter Name"
+        android:textColorHint="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/et_name"
+        android:layout_alignLeft="@id/et_name"
+        android:layout_alignRight="@id/et_name"
+        android:layout_alignStart="@id/et_name"
+        android:layout_below="@id/et_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter Phone"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/et_phone"
+        android:layout_alignRight="@id/et_phone"
+        android:layout_below="@id/et_phone"
+        android:text="Create Contact"
+        android:background="#0f0"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btn_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btn_create"
+        android:layout_alignRight="@id/btn_create"
+        android:layout_below="@id/btn_create"
+        android:text="Show Contacts"
+        android:background="#0ff"
+        android:layout_marginBottom="10dp"/>
+
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/btn_contacts"
+        android:layout_alignLeft="@id/btn_contacts"
+        android:layout_alignRight="@id/btn_contacts"
+        android:layout_alignStart="@id/btn_contacts"
+        android:layout_below="@id/btn_contacts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter ID to Delete or Update"
+        android:textColorHint="@color/colorAccent"
+        android:inputType="numberDecimal" />
+
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/et_id"
+        android:layout_alignRight="@id/et_id"
+        android:layout_below="@id/et_id"
+        android:text="Update "
+        android:layout_marginBottom="10dp"
+        android:background="#ff0"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btn_update"
+        android:layout_alignRight="@id/btn_update"
+        android:layout_below="@id/btn_update"
+        android:text="Delete "
+        android:background="#f00"/>
+
+</RelativeLayout>
